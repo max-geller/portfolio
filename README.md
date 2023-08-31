@@ -1,4 +1,4 @@
-# Max Geller Landing Page
+# Max Geller Portfolio Landing Page
 ## Getting Started
 
 First, run the development server:
