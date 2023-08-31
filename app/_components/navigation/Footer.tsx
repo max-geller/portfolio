@@ -8,21 +8,56 @@ export default function Footer() {
         <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
           {/* Col Title */}
           <div className="text-xs uppercase text-gray-400 font-medium mb-6">
-            Getting Started
+            PROFESSIONAL
           </div>
           {/* Links */}
           <a
             href="#"
             className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
           >
-            Installation
+            Resume
+          </a>
+
+        </div>
+        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          {/* Col Title */}
+          <div className="text-xs uppercase text-gray-400 font-medium mb-6">
+            DEVELOPMENT
+          </div>
+          {/* Links */}
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+          >
+            Projects
+          </a>
+
+        </div>
+        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
+          {/* Col Title */}
+          <div className="text-xs uppercase text-gray-400 font-medium mb-6">
+            PHOTOGRAPHY
+          </div>
+          {/* Links */}
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+          >
+            Travel
           </a>
           <a
             href="#"
             className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
           >
-            Release Notes
+            FPV
           </a>
+          <a
+            href="#"
+            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
+          >
+            Art
+          </a>
+
         </div>
       </div>
     </footer>

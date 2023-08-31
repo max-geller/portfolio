@@ -1,18 +1,18 @@
-import RecentPhotos from "./_components/carousels/RecentPhotos";
+import About from "./_components/About";
+import Contact from "./_components/Contact";
+import Hero from "./_components/Hero";
+import RecentMusic from "./_components/RecentMusic";
+import RecentPhotos from "./_components/RecentPhotos";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>
-        <h1>This is the landing page</h1>
-        <p>
-          There should be three cards shown: Photography, Development, and
-          personal Resume
-        </p>
+
         <p>
           I would also like to use Three.js to build a drone-style game that
           viewers can use to explore my profile
         </p>
-        <p>View HTML Verision (90s Throwback)</p>
+        <p>View day, night, and 90s theme</p>
         <p>Create a component that shows recently played music from Spotify</p>
         <p>
           Create a component that displays a stream of photos from my photo blog
@@ -27,7 +27,11 @@ export default function Home() {
           <li> Finish footer</li>
         </ul>
       </div>
+      <Hero />
+      <About />
       <RecentPhotos />
+      <RecentMusic />
+      <Contact />
     </main>
   );
 }

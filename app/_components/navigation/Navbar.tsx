@@ -29,7 +29,7 @@ export default function Navbar() {
             href="resume"
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black"
           >
-            RESUME
+            PROFESSIONAL
           </Link>
         </div>
       </div>
