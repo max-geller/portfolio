@@ -7,7 +7,6 @@
 - Create Personal Logo 
 - Decide on Font 
 - Confirm primary/secondary colors 
-- Configure CMS
 - Configure Font Awesome 
 - Add content to home page
 - Dynamic Background

@@ -15,19 +15,19 @@ export default function Navbar() {
         <div>
           <Link
             href="/dev"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-400 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 mr-4"
           >
             DEV
           </Link>
           <a
             href="/photo"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-400 mr-4"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400 mr-4"
           >
             PHOTO
           </a>
           <Link
             href="/career"
-            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-400"
+            className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-400"
           >
             CAREER
           </Link>
