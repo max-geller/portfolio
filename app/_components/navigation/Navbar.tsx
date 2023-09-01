@@ -26,10 +26,10 @@ export default function Navbar() {
             PHOTO
           </a>
           <Link
-            href="resume"
+            href="/career"
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-slate-400"
           >
-            PROFESSIONAL
+            CAREER
           </Link>
         </div>
       </div>

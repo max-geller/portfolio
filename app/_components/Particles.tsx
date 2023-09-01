@@ -25,7 +25,7 @@ export default function ParticlesComponent() {
       options={{
         background: {
           color: {
-            value: "#0000",
+            value: "rgb(20, 20, 20)",
           },
         },
         fpsLimit: 120,
