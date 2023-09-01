@@ -8,6 +8,7 @@ export default function Contact() {
       <div className="flex flex-row">
         <div className="flex flex-col">
           <p>Contact</p>
+          <p>New</p>
         </div>
       </div>
     </div>

@@ -20,12 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ParticlesComponent />
-
+        <ParticlesComponent />
         <Navbar />
         {children}
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
