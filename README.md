@@ -15,6 +15,7 @@
 - View day, night, and 90s theme
 - Recently played music from Spotify
 - Recent Photos Carousel
+- Giphy 404 page
 
 ## Getting Started
 
