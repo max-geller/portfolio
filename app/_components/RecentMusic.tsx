@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function RecentMusic() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center bg-slate-600 p-16 w-full">
       <h1 className="text-4xl font-bold">Recent Music</h1>
       <div className="flex flex-row">
         <div className="flex flex-col">

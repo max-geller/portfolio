@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function RecentPhotos() {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center p-36 w-full">
       <h1 className="text-4xl font-bold">Recent Photos</h1>
       <div className="flex flex-row">
         <div className="flex flex-col">
