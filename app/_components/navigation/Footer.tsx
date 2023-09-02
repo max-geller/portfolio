@@ -9,6 +9,7 @@ import {
   faYoutube,
   faSquareXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 export default function Footer() {
   return (
@@ -65,6 +66,15 @@ export default function Footer() {
             <a className="text-[#333]" href="http://www.youtube.com/@devmax617">
               <FontAwesomeIcon
                 icon={faYoutube}
+                className="svg inline-block"
+                style={{ color: "black", fontSize: 20 }}
+              />
+            </a>
+          </li>
+          <li className="mr-[15px] inline-block">
+            <a className="text-[#333]" href="mailto:mgeller@devmax.io">
+              <FontAwesomeIcon
+                icon={faEnvelope}
                 className="svg inline-block"
                 style={{ color: "black", fontSize: 20 }}
               />
