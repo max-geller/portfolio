@@ -3,13 +3,9 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div className="flex flex-col items-center justify-center p-64">
-      <h1 className="text-4xl font-bold">Hero Section</h1>
-      <div className="flex flex-row">
-
-          <p>Hero Section</p>
-     
-      </div>
+    <div className="flex bg-neutral-400 w-full pt-24 pb-24">
+      <div className="flex-auto bg-red-200 h-96 w-32">Hero Text</div>
+      <div className="flex-auto bg-red-300 ">Hero Photo</div>
     </div>
   );
 }

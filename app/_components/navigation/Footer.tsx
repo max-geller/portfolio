@@ -1,99 +1,49 @@
 // Create basic footer react component using Tailwind CSS
+import Image from "next/image";
 import React from "react";
 export default function Footer() {
   return (
-    <footer className=" pt-10 bg-neutral-800 sm:mt-10 ">
-      <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
-        {/* Col-1 */}
-        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          {/* Col Title */}
-          <div className="text-xs uppercase text-gray-400 font-medium mb-6">
-            Social
-          </div>
-          {/* Links */}
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            Twitter
-          </a>
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            Instagram
-          </a>
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            GitHub
-          </a>
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            DevMax.io
-          </a>
-        </div>
-        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          {/* Col Title */}
-          <div className="text-xs uppercase text-gray-400 font-medium mb-6">
-            PROFESSIONAL
-          </div>
-          {/* Links */}
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            Resume
-          </a>
-        </div>
-        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          {/* Col Title */}
-          <div className="text-xs uppercase text-gray-400 font-medium mb-6">
-            DEVELOPMENT
-          </div>
-          {/* Links */}
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            Projects
-          </a>
-        </div>
-        <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-          {/* Col Title */}
-          <div className="text-xs uppercase text-gray-400 font-medium mb-6">
-            PHOTOGRAPHY
-          </div>
-          {/* Links */}
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            Travel
-          </a>
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            FPV
-          </a>
-          <a
-            href="#"
-            className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700"
-          >
-            Art
-          </a>
-        </div>
+    <div className="cavani_tm_footer fixed inset-x-0 bottom-0 bg-white z-[10] h-[70px] leading-[70px] flex items-center justify-between py-0 px-[70px] middle:hidden">
+      <div className="copyright">
+        <p className="text-[#333] font-poppins text-xs">Copyright © 2023</p>
       </div>
-    </footer>
+      <div className="social">
+        <ul>
+          <li className="mr-[15px] inline-block h-8">
+            <a className="text-[#333]" href="#">
+              <Image
+                className="svg inline-block"
+                src="assets/img/social/facebook.svg"
+                alt="image"
+                width={20}
+                height={20}
+              />
+            </a>
+          </li>
+          <li className="mr-[15px] inline-block">
+            <a className="text-[#333]" href="#">
+              <Image
+                className="svg inline-block"
+                src="assets/img/social/twitter.svg"
+                alt="image"
+                width={20}
+                height={20}
+              />
+            </a>
+          </li>
+          <li className="mr-[15px] inline-block">
+            <a className="text-[#333]" href="#">
+              <Image
+                className="svg inline-block"
+                src="assets/img/social/instagram.svg"
+                alt="image"
+                width={20}
+                height={20}
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   );
 }

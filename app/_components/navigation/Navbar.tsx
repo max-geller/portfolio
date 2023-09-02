@@ -1,6 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
+const navLinks = [
+  { id: 1, name: "Home", href: "home" },
+  { id: 2, name: "About", href: "career" },
+  { id: 3, name: "Portfolio", href: "portfolio" },
+  { id: 4, name: "Photo", href: "photo" },
+  { id: 6, name: "Contact", href: "contact" },
+];
+
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between flex-wrap  p-6">
