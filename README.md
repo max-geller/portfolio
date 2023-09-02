@@ -2,20 +2,10 @@
 
 ## DevLog
 
-- Finish Navbar / Responsive Behavior
-- Finish footer
 - Create Personal Logo
 - Decide on Font
 - Confirm primary/secondary colors
-- Configure Font Awesome
-- Add content to home page
-- Dynamic Background
 - Add Personal Photo
-- Three.js drone-style game that viewers can use to explore profile
-- View day, night, and 90s theme
-- Recently played music from Spotify
-- Recent Photos Carousel
-- Giphy 404 page
 
 ## Getting Started
 
