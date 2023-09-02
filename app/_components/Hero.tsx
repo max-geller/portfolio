@@ -1,6 +1,19 @@
 import React from "react";
 import Link from "next/link";
 
+const List = [
+  "Construction Professional",
+  "Electrical Estimator",
+  "Preconstruction Manager",
+  "Web Developer",
+  "Data Analyst",
+  "Telecom Designer",
+  "Aerial Photographer",
+  "Software Engineer",
+  "FPV Pilot",
+  "90s Music Aficionado",
+];
+
 export default function Hero() {
   return (
     <div className="flex bg-neutral-400 w-full pt-24 pb-24">
