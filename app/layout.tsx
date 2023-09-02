@@ -6,8 +6,8 @@ import Footer from "./_components/navigation/Footer";
 import ParticlesComponent from "./_components/Particles";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import { Fragment } from "react";
 config.autoAddCss = false;
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +23,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      
       <body className={inter.className}>
-        <ParticlesComponent />
-        <Navbar />
-        {children}
-        <Footer />
+        <Fragment>
+            <ParticlesComponent />
+            <Navbar />
+            {children}
+            <Footer />
+        </Fragment>
       </body>
     </html>
   );
