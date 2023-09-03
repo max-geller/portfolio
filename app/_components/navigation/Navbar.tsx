@@ -1,5 +1,12 @@
+"use client";
 import React from "react";
+import { useState } from "react";
 import Link from "next/link";
+import { Switch } from "@headlessui/react";
+
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(" ");
+}
 
 const navLinks = [
   { id: 1, name: "Home", href: "home" },
@@ -10,6 +17,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const [enabled, setEnabled] = useState(true);
   return (
     <nav className="flex items-center justify-between flex-wrap  p-6">
       <div className="flex items-center flex-shrink-0 text-white  mr-6">
@@ -39,6 +47,25 @@ export default function Navbar() {
           >
             CAREER
           </Link>
+        </div>
+        <div>
+          <Switch
+            checked={enabled}
+            onChange={setEnabled}
+            className={classNames(
+              enabled ? "bg-green-600" : "bg-gray-200",
+              "relative inline-flex h-3 w-7 flex-shrink-0 mb-2 ml-3 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
+            )}
+          >
+            <span className="sr-only">Use setting</span>
+            <span
+              aria-hidden="true"
+              className={classNames(
+                enabled ? "translate-x-3" : "translate-x-0",
+                "pointer-events-none inline-block h-2 w-3 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"
+              )}
+            />
+          </Switch>
         </div>
       </div>
     </nav>
