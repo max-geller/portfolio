@@ -22,6 +22,8 @@ export default function Footer() {
           <li className="mr-[15px] inline-block">
             <a
               className="text-[#333]"
+              target="_blank"
+              rel="noopener noreferrer"
               href="http://www.linkedin.com/in/maxgeller"
             >
               <FontAwesomeIcon
@@ -32,7 +34,12 @@ export default function Footer() {
             </a>
           </li>
           <li className="mr-[15px] inline-block">
-            <a className="text-[#333]" href="http://www.github.com/max-geller">
+            <a
+              className="text-[#333]"
+              href="http://www.github.com/max-geller"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 className="svg inline-block"
@@ -41,7 +48,12 @@ export default function Footer() {
             </a>
           </li>
           <li className="mr-[15px] inline-block">
-            <a className="text-[#333]" href="http://www.x.com/Max_Geller">
+            <a
+              className="text-[#333]"
+              href="http://www.x.com/Max_Geller"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faSquareXTwitter}
                 className="svg inline-block"
@@ -53,6 +65,8 @@ export default function Footer() {
             <a
               className="text-[#333]"
               href="http://www.instagram.com/maxgeller"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FontAwesomeIcon
                 icon={faInstagram}
@@ -63,7 +77,12 @@ export default function Footer() {
           </li>
 
           <li className="mr-[15px] inline-block">
-            <a className="text-[#333]" href="http://www.youtube.com/@devmax617">
+            <a
+              className="text-[#333]"
+              href="http://www.youtube.com/@devmax617"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FontAwesomeIcon
                 icon={faYoutube}
                 className="svg inline-block"
