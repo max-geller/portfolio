@@ -2,11 +2,6 @@
 
 ## DevLog
 
-- Create Personal Logo
-- Decide on Font
-- Confirm primary/secondary colors
-- Add Personal Photo
-
 ## Getting Started
 
 First, run the development server:
