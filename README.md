@@ -1,6 +1,15 @@
-# Max Geller Portfolio Landing Page
+# Max Geller Portfolio
 
-## DevLog
+This is my personal portfolio website, built with Next.js and TypeScript. It is deployed on Vercel at [maxgeller.com](https://https://portfolio-max-geller.vercel.app/). It is a work in progress, and I am always adding new features and content.
+
+## Features
+
+- [x] TypeScript
+- [x] Next.js
+- [x] Tailwind CSS
+- [x] Vercel
+- [x] Typed.JS
+- [x] ParticlesJS
 
 ## Getting Started
 

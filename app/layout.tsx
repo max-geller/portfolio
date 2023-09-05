@@ -7,6 +7,8 @@ import ParticlesComponent from "./_components/Particles";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { Fragment } from "react";
+import Script from "next/script";
+
 config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,12 +25,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <div className="container">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-4SEQ4XWJ32" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '4SEQ4XWJ32');
+        `}
+        </Script>
+      </div>
+
       <body className={inter.className}>
         <Fragment>
-            <ParticlesComponent />
-            <Navbar />
-            {children}
-            <Footer />
+          <ParticlesComponent />
+          <Navbar />
+          {children}
+          <Footer />
         </Fragment>
       </body>
     </html>
