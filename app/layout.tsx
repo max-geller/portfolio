@@ -17,7 +17,8 @@ const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Max Geller",
-  description: "Personal portfolio website for Max Geller",
+  description:
+    "Personal portfolio website for Max Geller, construction manager, electrical preconstruction manager,, and software engineer.",
 };
 
 export default function RootLayout({

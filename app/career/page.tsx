@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
+
 import Bio from "./_components/Bio";
 import Education from "./_components/Education";
 import Experience from "./_components/Experience";
 import Hero from "./_components/Hero";
+
+export const metadata: Metadata = {
+  title: "Max Geller Career",
+  description: "Max Geller is an electrical preconstruction manager based in Phoenix Arizona.",
+};
 
 export default function Resume() {
   return (
