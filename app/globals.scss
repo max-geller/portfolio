@@ -22,3 +22,25 @@
 
 body {
 }
+
+.app_footer {
+
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+@media (max-width: 600px) {
+  .app_footer {
+    height: 4rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 4rem;
+  }
+  .app_footer .social ul li {
+    margin-right: 10px;
+  }
+}

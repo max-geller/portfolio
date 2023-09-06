@@ -26,32 +26,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-
-      <html lang="en">
-            <Suspense fallback={<Loading />}>
-        {/* Global Site Tag (gtag.js) - Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-4SEQ4XWJ32" />
-        <Script id="google-analytics">
-          {`
+    <html lang="en">
+      {/* Global Site Tag (gtag.js) - Google Analytics */}
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-4SEQ4XWJ32" />
+      <Script id="google-analytics">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
           gtag('config', '4SEQ4XWJ32');
         `}
-        </Script>
+      </Script>
 
-        <body className={inter.className}>
-          <Fragment>
-            <Preloader />
-            {/* <ParticlesComponent /> */}
+      <body className={inter.className}>
+        <Fragment>
+          <Preloader />
+          {/* <ParticlesComponent /> */}
+          <div className="app-container w-full min-h-[100vh] clear-both float-left relative">
             <Navbar />
             {children}
             <Footer />
-          </Fragment>
-        </body>
-        </Suspense>
-      </html>
-
+          </div>
+        </Fragment>
+      </body>
+    </html>
   );
 }
