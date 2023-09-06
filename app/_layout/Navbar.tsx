@@ -20,7 +20,7 @@ export default function Navbar() {
   const [enabled, setEnabled] = useState(true);
   return (
     <nav className="flex items-center justify-between flex-wrap  p-6">
-      <div className="flex items-center flex-shrink-0 text-white  mr-6">
+      <div className="flex items-center flex-shrink-0   mr-6">
         <span className="font-semibold text-xl tracking-tight">
           <Link href="/">MAX GELLER</Link>
         </span>

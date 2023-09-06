@@ -1,12 +1,14 @@
 import "./globals.scss";
 import type { Metadata } from "next";
+import { Fragment, Suspense } from "react";
+import Loading from "./loading";
 import { Inter } from "next/font/google";
-import Navbar from "./_components/navigation/Navbar";
-import Footer from "./_components/navigation/Footer";
-import ParticlesComponent from "./_components/Particles";
+import Preloader from "./_layout/Preloader";
+import Navbar from "./_layout/Navbar";
+import Footer from "./_layout/Footer";
+import ParticlesComponent from "./_layout/Particles";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { Fragment } from "react";
 import Script from "next/script";
 
 config.autoAddCss = false;
@@ -24,8 +26,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <div className="container">
+
+      <html lang="en">
+            <Suspense fallback={<Loading />}>
+        {/* Global Site Tag (gtag.js) - Google Analytics */}
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-4SEQ4XWJ32" />
         <Script id="google-analytics">
           {`
@@ -36,16 +40,18 @@ export default function RootLayout({
           gtag('config', '4SEQ4XWJ32');
         `}
         </Script>
-      </div>
 
-      <body className={inter.className}>
-        <Fragment>
-          <ParticlesComponent />
-          <Navbar />
-          {children}
-          <Footer />
-        </Fragment>
-      </body>
-    </html>
+        <body className={inter.className}>
+          <Fragment>
+            <Preloader />
+            {/* <ParticlesComponent /> */}
+            <Navbar />
+            {children}
+            <Footer />
+          </Fragment>
+        </body>
+        </Suspense>
+      </html>
+
   );
 }

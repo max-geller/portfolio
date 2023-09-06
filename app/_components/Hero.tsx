@@ -4,7 +4,7 @@ import AnimationText from "./AnimationText";
 
 export default function Hero() {
   return (
-    <div className="flex flex-grow bg-gradient-to-r from-blue-500 to-purple-500 text-white p-8">
+    <div className="flex flex-grow bg-gradient-to-r from-blue-500 to-purple-500 text-white p-8 w-full">
       <div className="flex-auto">
         <span className="text-blue-200">
           <h3 className="name text-[72px] font-bold uppercase mb-[30px]">
