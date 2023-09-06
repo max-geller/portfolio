@@ -16,9 +16,11 @@ function getCurrentYear() {
 
 export default function Footer() {
   return (
-    <div className="app_footer fixed inset-x-0 bottom-0 bg-white z-[10] h-[70px] leading-[70px] flex items-center justify-between py-0 px-[70px] middle:hidden">
+    <div className="app_footer fixed inset-x-0 bottom-0 bg-white z-[10] h-[70px]  flex items-center justify-between py-0  middle:hidden">
       <div className="copyright">
-        <p className="text-[#333] font-poppins text-xs">Copyright © {getCurrentYear()}</p>
+        <p className="text-[#333] font-oswald text-xs">
+          Copyright © {getCurrentYear()}
+        </p>
       </div>
       <div className="social ">
         <ul>

@@ -13,7 +13,7 @@ import Script from "next/script";
 
 config.autoAddCss = false;
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Max Geller",
@@ -39,7 +39,7 @@ export default function RootLayout({
         `}
       </Script>
 
-      <body className={inter.className}>
+      <body className={font.className}>
         <Fragment>
           <Preloader />
           {/* <ParticlesComponent /> */}
