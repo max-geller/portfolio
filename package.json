@@ -1,5 +1,6 @@
 {
-  "name": "landing",
+  "name": "portfolio",
+  "author": "Max Geller",
   "version": "0.1.0",
   "private": true,
   "scripts": {
