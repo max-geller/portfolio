@@ -9,16 +9,13 @@ const TypingAnimation = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "a Construction Professional",
-        "an Electrical Estimator",
-        "a Preconstruction Manager",
-        "a Web Developer",
-        "a Data Analyst",
-        "a Telecom Designer",
-        "an Aerial Photographer",
-        "a Software Engineer",
-        "a FPV Pilot",
-        "a 90s Music Aficionado",
+        "Electrical Estimator",
+        "Preconstruction Manager",
+        "Web Developer",
+        "Aerial Photographer",
+        "Software Engineer",
+        "FPV Pilot",
+        "90s Music Aficionado",
       ], // Strings to display
       typeSpeed: 50,
       backSpeed: 25,
