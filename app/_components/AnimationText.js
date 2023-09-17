@@ -9,12 +9,10 @@ const TypingAnimation = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Electrical Estimator",
+        "Electrical Estimating",
         "Preconstruction Manager",
-        "Web Developer",
-        "Aerial Photographer",
-        "Software Engineer",
-        "FPV Pilot",
+        "Aerial Photography",
+        "Software Development",
         "90s Music Aficionado",
       ], // Strings to display
       typeSpeed: 50,
@@ -35,7 +33,7 @@ const TypingAnimation = () => {
       <span className="cd-headline clip">
         {" "}
         {/* ANIMATE TEXT VALUES: zoom, rotate-1, letters type, letters rotate-2, loading-bar, slide, clip, letters rotate-3, letters scale, push,  */}
-        <span className="blc">{"I'm "} </span>{" "}
+        <span className="blc">{"-"} </span>{" "}
         <span className="cd-words-wrapper">
           <b className="is-visible" ref={el}></b>
         </span>
