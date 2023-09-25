@@ -10,6 +10,7 @@ This is my personal portfolio website, built with Next.js and TypeScript. It is 
 - [x] Vercel
 - [x] Typed.JS
 - [x] ParticlesJS
+- [x] FontAwesome Icons
 
 ## Getting Started
 
